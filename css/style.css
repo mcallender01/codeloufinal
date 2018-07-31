@@ -1,0 +1,349 @@
+
+html {
+    height: 100%;
+    background-color: whitesmoke;
+    margin: 0;
+}
+
+.gallery-html {
+    background: url('../travelingbard/mountainclouds.jpg');
+    background-attachment: fixed;
+}
+
+
+
+
+#body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+}
+
+#top {
+    padding-top: calc(40vh - 147px);
+    
+}
+
+#gallery-top {
+    padding-top: calc(9vh - 53.6px);
+     
+    
+}
+.aboutcont p {
+    font-family: 'Share', cursive;
+    text-shadow: none;
+    color: 
+ 
+}
+
+#title {
+   text-align: center;
+   color: white;
+    font-size: 8em;
+     text-shadow:
+   -3px -3px 0 #000,  
+    3px -3px 0 #000,
+    -3px 3px 0 #000,
+     3px 3px 0 #000;
+
+}
+
+
+
+    
+    
+footer {
+    display:inline-block;
+    position: static;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    color: white;
+    margin: 0;
+    padding-bottom: 16px;
+    padding-top: 10vh;
+    }
+footer p {
+    margin: 0
+}
+
+
+li {
+    margin-right: 1em;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+
+}
+
+a:hover {
+    color: #c80017;
+    
+}
+
+
+
+.profile-photo {
+    display: block;
+    max-width: 30%;
+    height: auto;
+    margin: 30px auto;
+    border-radius: 100%;
+}
+
+.about {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding-top,padding-left,padding-right: 10vh;
+    align-content: center;
+}
+.gallink {
+    font-size:2em;
+}
+
+.backback, .gallink {
+    
+    color: white;
+    text-shadow:
+   -1px -1px 0 #000,  
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+     1px 1px 0 #000;
+}
+.backback{   
+    background: linear-gradient( to top right, lightgray,transparent),
+                url('../travelingbard/cloud.jpg');
+    
+    background-attachment: fixed;    
+    height: 100%; 
+    
+}
+
+.cnc {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+.aboutcont {
+    width: 55%;
+    align-self: center;
+    font-size: 20px;
+
+}
+
+
+h1,h2, .gallink {
+    font-family: 'Pacifico', cursive;
+}
+
+.text {
+    font-family: 'Share', cursive;
+}
+
+#mainheader,#gallery-header {
+    position:static;
+    top: 0;
+    right:0;
+    width: 100%;
+    background: url('../travelingbard/mtnsidevillage.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+     
+}
+
+#mainheader {
+    height: 90vh;
+    background-attachment: fixed;
+}
+
+#gallery-header {
+    height: 40vh;
+    background-attachment: local;
+}
+#gallery-title {
+    box-sizing: content-box;
+    margin: 53.6px auto;
+    text-align: center;
+    color: white;
+    font-size: 5em;
+     text-shadow:
+       -2px -2px 0 #000,  
+        2px -2px 0 #000,
+        -2px 2px 0 #000,
+         2px 2px 0 #000;
+    
+    
+}
+
+
+
+
+#photos {
+
+  line-height: 3;  
+  column-count: 5;
+  column-gap: 1%; 
+  column-fill: balance;
+  margin: 2%;
+  
+
+
+}
+
+#photos img {
+  /* Just in case there are inline attributes */
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  
+  
+}
+
+
+#photos img:hover {
+    box-shadow: 2px 4px 10px 0 rgba(0, 0, 0,0.75), -2px 4px 10px 0 rgba(0, 0, 0,0.75), 0 6px 20px 5px rgba(0, 0, 0, 0.25);
+    transform: scale(1.01,1.01);
+    border-radius: 10px;
+}
+
+#more,#less {
+    border: none;
+    font-size: 20px;
+    border-radius: 12px;
+    background-color: skyblue;
+    padding: 5px;
+}
+#more:active,#less:active {
+    background-color: aqua;
+    border: none;
+}
+
+#more:hover, #less:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    transform: scale(1.1);
+}
+
+#more:focus, #less:focus {
+    outline: 0;
+}
+
+#button-div {
+    text-align: center;
+}
+
+
+/*----------Media Queries-------------*/
+
+
+@media only screen and (max-width: 1500px) {
+     #photos{
+
+        line-height: 2;  
+        column-count: 4;
+        column-fill: balance;
+        column-gap: 2%;
+        margin: 2%;
+    }
+    #title {
+        font-size: 7em
+    }
+}
+
+
+@media only screen and (max-width: 1100px) {
+     #photos{
+
+        line-height: 2;  
+        column-count: 3;
+        column-fill: balance;
+        column-gap: 2%;
+        margin: 2%;
+    }
+    #title {
+        font-size: 5em;
+    }
+    #mainheader {
+        height: 65vh;
+        background-attachment: local;
+    }
+    .backback {
+        height: 100%;
+    }
+    .profile-photo {
+        max-width:40%;
+    }
+    #top {
+        padding-top: 20vh;
+    }
+    
+}
+
+@media only screen and (max-width: 800px) {
+    #photos{
+
+        line-height: 2;  
+        column-count: 2;
+        column-fill: balance;
+        column-gap: 2%;
+        margin: 2%;
+    }
+    #gallery-title,#title{
+        font-size: 4em;
+    }
+    #mainheader {
+        height: 75%;
+        background-attachment: local;
+        
+    }
+    .profile-photo {
+        max-width: 45%;
+    }
+    
+}
+@media only screen and (max-width: 670px) {
+    #gallery-title {
+        font-size: 3em;
+    }
+    
+    .profile-photo {
+        max-width: 50%;
+    }
+    
+    .aboutcont {
+        width: 75%;
+    }
+    #title {
+        font-size:4em;
+    }
+}
+        
+@media only screen and (max-width: 460px) {
+    #photos{
+
+        line-height: 2;  
+        column-count: 1;
+        column-fill: balance;
+        column-gap: 2%;
+        margin: 2%;
+    }
+    .aboutcont{
+        width: 85%;
+    }
+    .profile-photo {
+        max-width: 60%
+    }
+    
+    
+    
+}
